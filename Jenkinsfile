@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('git') {
             steps  {
-                git url:'https://github.com/ajaymaddela/game-of-lifeapr24.git'
+                git url:'https://github.com/ajaymaddela/game-of-lifeapr24.git',
                   branch:'master'
 
             }
