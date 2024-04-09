@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'nop'}
     triggers {
-      pollSCM( * * * * *)
+      pollSCM('* * * * *')
     }
     stages {
         stage('git') {
