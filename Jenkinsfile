@@ -10,13 +10,14 @@ pipeline {
         stage('git') {
             steps  {
                 git url: 'https://github.com/ajaymaddela/game-of-lifeapr24.git'
+                  branch: 'master'
 
             }
         }
         stage('build') {
             steps {
-                sh 'cd ./game-of-lifeapr24'
-                sh 'mvn package'
+            
+                sh 'mvn clean package'
             }
         }
     }
