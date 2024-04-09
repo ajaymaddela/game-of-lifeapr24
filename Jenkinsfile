@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'spc' }
+    agent { label 'game' }
      tools {
         maven 'MAVEN_3.9.6' 
     }
