@@ -12,7 +12,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'cd ~/game-of-lifeapr24/'
+                
                 sh 'mvn package'
             }
         }
