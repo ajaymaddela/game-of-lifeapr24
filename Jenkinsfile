@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'spc'}
+    agent { label 'spc' }
      tools {
         maven 'MAVEN_3.9.6' 
     }
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                
+                sh 'cd ./game-of-lifeapr24'
                 sh 'mvn package'
             }
         }
